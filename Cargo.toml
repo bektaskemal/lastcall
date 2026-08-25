@@ -1,0 +1,29 @@
+[package]
+name = "lastcall"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+description = "Warns you before your Claude Code or Codex quota resets while a meaningful amount is still unused."
+license = "MIT"
+repository = "https://github.com/bektaskemal/lastcall"
+readme = "README.md"
+keywords = ["cli", "quota", "claude", "codex", "notify"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+anyhow = "1"
+async-trait = "0.1"
+chrono = { version = "0.4", default-features = false, features = ["clock", "serde", "std"] }
+clap = { version = "4", features = ["derive"] }
+dirs = "6"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt", "time"] }
+toml = "0.8"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"
