@@ -18,11 +18,10 @@ notifications are opt-in.
 
 ## Install
 
-Lastcall is not on crates.io yet. You need Rust 1.75 or newer:
+You need Rust 1.75 or newer:
 
 ```bash
-git clone https://github.com/bektaskemal/lastcall.git
-cargo install --path lastcall
+cargo install lastcall
 ```
 
 The terminal command should work anywhere the project builds. Automatic
