@@ -13,8 +13,8 @@ Codex
 ```
 
 `LAST CALL` means there is still plenty of quota left, but the window is close
-to resetting. Running `lastcall` only prints the current state. Notifications
-are opt-in and run in the background without a daemon of Lastcall's own.
+to resetting. Running `lastcall` only prints the current state. Desktop
+notifications are opt-in.
 
 ## Install
 
