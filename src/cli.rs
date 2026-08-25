@@ -9,7 +9,7 @@ use crate::config::parse_duration;
 #[command(
     name = "lastcall",
     version,
-    about = "Warns you before your Claude Code or Codex quota resets while a meaningful amount is still unused.",
+    about = "A tiny Linux CLI that reminds you before your Claude Code or Codex quota resets unused.",
     disable_help_subcommand = true
 )]
 pub struct Cli {

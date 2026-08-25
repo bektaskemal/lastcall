@@ -1,7 +1,7 @@
 # lastcall
 
-Lastcall shows your Claude Code and Codex quota windows and can send desktop
-notifications before a large unused allowance resets.
+A tiny Linux CLI that reminds you before your Claude Code or Codex quota resets
+unused.
 
 ```console
 $ lastcall
