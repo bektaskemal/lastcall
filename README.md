@@ -1,7 +1,8 @@
 # lastcall
 
 Lastcall is a small, open-source CLI that shows your Claude Code and Codex
-quota windows and warns you before a large unused allowance resets.
+quota windows and can send desktop notifications before a large unused
+allowance resets.
 
 ```console
 $ lastcall
@@ -13,10 +14,11 @@ Codex
 ```
 
 `LAST CALL` means there is still plenty of quota left in a long-running window,
-but the window is close to resetting. Running `lastcall` only prints the current
-state; desktop notifications are opt-in. `LAST CALL` is highlighted in
-interactive terminals, while piped output remains plain text and respects
-`NO_COLOR`.
+but the window is close to resetting. Enable background checks once with
+`lastcall enable`, and Lastcall sends an early desktop reminder followed by a
+final reminder if the quota is still unused. Running `lastcall` itself only
+prints the current state. `LAST CALL` is highlighted in interactive terminals,
+while piped output remains plain text and respects `NO_COLOR`.
 
 ## Why
 
