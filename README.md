@@ -87,17 +87,13 @@ logged. Lastcall does not refresh them; the official CLIs remain responsible
 for their sessions.
 
 Configuration lives under `~/.config/lastcall`. Notification deduplication
-state—provider, window, warning tier, and reset timestamp—is stored under
-`~/.local/state/lastcall`.
+state is stored under `~/.local/state/lastcall`.
 
 ## Caveats
 
 Lastcall is an independent project and is not affiliated with Anthropic or
 OpenAI. It relies on the usage endpoints and local session formats used by
 their CLIs. These are not stable public APIs and may change without notice.
-
-Automatic notifications are Linux-only for now. macOS support would require a
-`launchd` timer and a native notification backend.
 
 ## Development
 
