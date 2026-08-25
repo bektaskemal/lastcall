@@ -17,8 +17,7 @@ Codex
 but the window is close to resetting. Enable background checks once with
 `lastcall enable`, and Lastcall sends an early desktop reminder followed by a
 final reminder if the quota is still unused. Running `lastcall` itself only
-prints the current state. `LAST CALL` is highlighted in interactive terminals,
-while piped output remains plain text and respects `NO_COLOR`.
+prints the current state.
 
 ## Why
 
